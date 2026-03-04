@@ -9,7 +9,7 @@
   /* Brand Colors (adjusted for contrast: gold ko darker kiya light bg pe use ke liye, muted brown ko thoda dark kiya) */
   --color-primary:       #8B2635;   /* Deep wine / burgundy   */
   --color-primary-dark:  #6A1C28;   /* Hover state            */
-  --color-accent:        #A0722A;   /* Adjusted darker gold for better contrast on light bg (original #C8965A tha, ab 4.5:1+ meet karta hai) */
+  --color-accent:        #A0722A;   /* Gold — used on DARK backgrounds only (4.64:1 on footer #160609 ✓). Do NOT use as normal text on light bg (ratio 4.07:1 < 4.5:1). Use --color-accent-dark for light-bg text. */
   --color-accent-dark:   #7A541F;   /* Even darker gold for accents/hovers */
 
   /* Neutrals (bg ko thoda off-white rakha for better readability) */
@@ -596,7 +596,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: var(--color-accent-dark); /* WCAG Fix: #A0722A gave 4.25:1 (fail) → #7A541F gives 6.77:1 (pass) with white text */
+  background: var(--color-accent-dark); /* WCAG fix: #A0722A gave 4.26:1 (FAIL). --color-accent-dark (#7A541F) gives 6.74:1 ✓ */
   color: var(--color-text-light);
   font-size: 0.75rem;
   font-weight: 600;
@@ -1525,4 +1525,4 @@ h1, h2, h3, h4, h5, h6 {
   body { background: white; color: black; }
 
   a[href]::after { content: " (" attr(href) ")"; font-size: 0.75em; }
-}
+   }
