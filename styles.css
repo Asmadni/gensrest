@@ -9,8 +9,8 @@
   /* Brand Colors (adjusted for contrast: gold ko darker kiya light bg pe use ke liye, muted brown ko thoda dark kiya) */
   --color-primary:       #8B2635;   /* Deep wine / burgundy   */
   --color-primary-dark:  #6A1C28;   /* Hover state            */
-  --color-accent:        #A0722A;   /* Adjusted darker gold for better contrast on light bg (original #C8965A tha, ab 4.5:1+ meet karta hai) */
-  --color-accent-dark:   #7A541F;   /* Even darker gold for accents/hovers */
+  --color-accent:        #936621;   /* Darker gold — ab 4.5:1+ pass karta hai light bg pe */
+  --color-accent-dark:   #805B1C;   /* Even darker gold for accents/hovers & better contrast */
 
   /* Neutrals (bg ko thoda off-white rakha for better readability) */
   --color-bg:            #FAFAF8;   /* Off-white canvas       */
@@ -278,8 +278,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn--accent:hover,
 .btn--accent:focus-visible {
-  background-color: #8a5e20;
-  border-color: #8a5e20;
+  background-color: #6d4c18;
+  border-color: #6d4c18;
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -458,7 +458,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  opacity: 0.85;
+  color: var(--color-accent-dark);   /* opacity hata di + darker accent use kiya */
   margin-bottom: var(--space-sm);
 }
 
