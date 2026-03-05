@@ -1482,7 +1482,11 @@ h1, h2, h3, h4, h5, h6 {
   .nav__cta { margin-top: var(--space-sm); }
 
   .nav__toggle { display: flex; }
-
+.nav__cta { 
+  margin-top: var(--space-sm);
+  background-color: #8B6914 !important;
+  color: #FFFFFF !important;
+}
   .features-bar__grid { grid-template-columns: 1fr 1fr; }
 
   .form-grid { grid-template-columns: 1fr; }
