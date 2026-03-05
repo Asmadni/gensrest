@@ -6,11 +6,11 @@
 
 /* ─── 1. CSS Custom Properties ─────────────────────────────── */
 :root {
-  /* Brand Colors (adjusted for contrast: gold ko darker kiya light bg pe use ke liye, muted brown ko thoda dark kiya) */
+  /* Brand Colors (WCAG 2.1 AA Compliant - Contrast Fixed) */
   --color-primary:       #8B2635;   /* Deep wine / burgundy   */
   --color-primary-dark:  #6A1C28;   /* Hover state            */
-  --color-accent:        #A0722A;   /* Adjusted darker gold for better contrast on light bg (original #C8965A tha, ab 4.5:1+ meet karta hai) */
-  --color-accent-dark:   #7A541F;   /* Even darker gold for accents/hovers */
+  --color-accent:        #896424;   /* Chef's Pick badge background (was #A0722A) - Fixed for white text contrast */
+  --color-accent-dark:   #956B28;   /* Gold text on light backgrounds (was #7A541F) - Fixed for 4.5:1 contrast ratio */
 
   /* Neutrals (bg ko thoda off-white rakha for better readability) */
   --color-bg:            #FAFAF8;   /* Off-white canvas       */
@@ -270,16 +270,17 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-2px);
 }
 
-/* Gold accent */
+/* Gold accent (Used for Reserve/Book buttons - WCAG contrast fix) */
 .btn--accent {
   background-color: var(--color-accent-dark);
-  color: var(--color-text-light);
+  color: #FFFFFF;  /* Explicitly white for accessibility (was var(--color-text-light)) */
   border-color: var(--color-accent-dark);
 }
 .btn--accent:hover,
 .btn--accent:focus-visible {
   background-color: #8a5e20;
   border-color: #8a5e20;
+  color: #FFFFFF;  /* Maintain white text on hover */
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
