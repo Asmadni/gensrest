@@ -19,7 +19,7 @@
   --color-border:        #E2D9CE;   /* Subtle border          */
 
   /* Text (muted ko darker kiya for 4.5:1 on white) */
-  --color-text:          #FFFFFF;   /* Body text              */
+  --color-text:          #1C1C1C;   /* Body text              */
   --color-text-muted:    #4A3F32;   /* Adjusted darker muted brown (original #5C5244 tha) */
   --color-text-light:    #FFFFFF;   /* Light text on dark bg  */
 
