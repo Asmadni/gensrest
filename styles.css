@@ -9,7 +9,7 @@
   /* Brand Colors (adjusted for contrast: gold ko darker kiya light bg pe use ke liye, muted brown ko thoda dark kiya) */
   --color-primary:       #8B2635;   /* Deep wine / burgundy   */
   --color-primary-dark:  #6A1C28;   /* Hover state            */
-  --color-accent:        #525200;   /* Darker olive-gold for WCAG AA contrast compliance (was #A0722A — insufficient contrast on light bg) */
+  --color-accent:        #A0722A;   /* Adjusted darker gold for better contrast on light bg (original #C8965A tha, ab 4.5:1+ meet karta hai) */
   --color-accent-dark:   #7A541F;   /* Even darker gold for accents/hovers */
 
   /* Neutrals (bg ko thoda off-white rakha for better readability) */
@@ -259,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Ghost (light, for hero) */
 .btn--ghost {
-  background-color: #000000;
+  background-color: transparent;
   color: var(--color-text-light);
   border-color: var(--color-text-light);
 }
@@ -460,10 +460,6 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   opacity: 0.85;
   margin-bottom: var(--space-sm);
-  background-color: #000000;
-  display: inline-block;
-  padding: 0.25rem 0.625rem;
-  border-radius: var(--radius-sm);
 }
 
 .hero__title {
@@ -485,10 +481,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto var(--space-lg);
   opacity: 0.9;
   line-height: 1.75;
-  background-color: #000000;
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border-radius: var(--radius-sm);
 }
 
 .hero__actions {
@@ -510,11 +502,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  opacity: 0.7;
   animation: fadeIn 1s ease 1.2s forwards;
   opacity: 0;
-  background-color: #000000;
-  padding: 0.375rem 0.75rem;
-  border-radius: var(--radius-sm);
 }
 
 .hero__scroll-line {
@@ -1535,4 +1525,4 @@ h1, h2, h3, h4, h5, h6 {
   body { background: white; color: black; }
 
   a[href]::after { content: " (" attr(href) ")"; font-size: 0.75em; }
-}
+   }
