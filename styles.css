@@ -22,7 +22,10 @@
   --color-text:          #1C1C1C;   /* Body text              */
   --color-text-muted:    #4A3F32;   /* Adjusted darker muted brown (original #5C5244 tha) */
   --color-text-light:    #FFFFFF;   /* Light text on dark bg  */
-
+.btn-primary {
+  background-color: #8B6914 !important;
+  color: #FFFFFF !important;
+}
   /* Typography */
   --font-heading:        'Playfair Display', Georgia, serif;
   --font-body:           'Inter', system-ui, sans-serif;
